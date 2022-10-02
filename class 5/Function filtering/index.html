@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- <link rel="stylesheet" href="index.css"> -->
+    
+    <title>Function</title>
+</head>
+<body>
+    
+    <script>
+        var students = [
+            {
+                id: "2016-13-14",
+                name: "Monaem",
+                cgpa: 3.4
+            },
+            {
+                id: "2016-13-144",
+                name: "Monaem Khan",
+                cgpa: 3.3
+            },
+            {
+                id: "2016-133-14",
+                name: "M.A Monaem",
+                cgpa: 2.4
+            }
+        ]
+            console.log(students);
+        // function studentName(){
+        //     return students.filter((x)=>{
+        //         return x.cgpa > 3.00; //get a single object
+        //     }).map((y)=>{ //map all property of that object
+        //         return y.name;
+        //     });
+        // }
+
+        var studentName = ()=>{
+            return students.filter((x)=> x.cgpa>3).map((y)=>y.name)
+        }
+
+        console.log(studentName());
+    </script>
+
+    <!-- <script src="index.js"></script> -->
+</body>
+</html>

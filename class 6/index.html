@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>This Is JS</p>
+
+    <script>
+        console.clear();
+
+        const getdata = () =>{
+            const xhr = new XMLHttpRequest();
+            // console.log(xhr);
+            xhr.open('GET','https://jsonplaceholder.typicode.com/todos/1');
+            xhr.onload = () =>{
+                let data = xhr.response;
+                console.log(JSON.parse(data));
+            }
+
+            xhr.onerror = () =>{
+                console.log('There is an error');
+            }
+            xhr.send();
+
+        }
+
+        getdata();
+
+    </script>
+</body>
+</html>

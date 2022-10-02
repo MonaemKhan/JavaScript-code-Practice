@@ -1,0 +1,9 @@
+/* body{
+    margin: 0;
+    padding: 0;
+} */
+#div1{
+    height: 10rem;
+    width: 20rem;
+    background-color: tomato;
+}
