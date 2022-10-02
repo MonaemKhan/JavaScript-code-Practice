@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS SetInterval SetTimeout</title>
+</head>
+
+<body>
+    <!-- <p>This A Monaem's Fan Page</p> -->
+
+    <div class="container">
+        <!-- This Is A Container -->
+        <span id="time"></span>
+    </div>
+
+    <script>
+        function displaytime() {
+            time = new Date();
+            // console.log(time);
+            document.getElementById('time').innerHTML = time;
+        }
+
+        setInterval(displaytime, 1000);
+    </script>
+</body>
+<!-- <script src="js-interval-timeout.js"></script> -->
+
+</html>

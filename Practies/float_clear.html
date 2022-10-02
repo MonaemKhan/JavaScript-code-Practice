@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLOAT & CLEAR</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: 900px;
+            border: 2px solid greenyellow;
+            margin: auto;
+        }
+
+        .item{
+            border: 2px solid gold;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background-color: gray;
+            text-align: justify;
+        }
+
+        #fruit{
+            float: left;
+            width: 48%;
+        }
+
+        #computer{
+            float: left;
+            width: 48%;
+        }
+
+        #stasonary{
+            clear: both;
+            /* float: left; */
+            width: 100%;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="item" id="fruit">
+            <h3>Frutes</h3>
+
+            <p id="fruitspara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ipsum voluptates quos incidunt delectus
+                facere alias tempora possimus modi adipisci obcaecati neque beatae odit corrupti, rerum sint consequatur
+                maxime magnam! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam quod illum perspiciatis ea incidunt minus, molestiae labore veniam porro inventore nulla veritatis debitis impedit magnam non asperiores facere aliquam aperiam.</p>
+        </div>
+
+        <div class="item" id="computer">
+            <h3>Computer</h3>
+
+            <p id="computerpara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ipsum voluptates quos incidunt delectus
+                facere alias tempora possimus modi adipisci obcaecati neque beatae odit corrupti, rerum sint consequatur
+                maxime magnam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi facere temporibus inventore quod vel aliquam ad perspiciatis et autem ut suscipit, a dolores natus. Modi qui atque aliquid assumenda consectetur.</p>
+        </div>
+
+        <div class="item" id="stasonary">
+            <h3>Stasonary</h3>
+
+            <p id="stasonarypara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ipsum voluptates quos incidunt delectus
+                facere alias tempora possimus modi adipisci obcaecati neque beatae odit corrupti, rerum sint consequatur
+                maxime magnam!</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

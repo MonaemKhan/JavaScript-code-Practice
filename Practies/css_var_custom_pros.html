@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variable/ Custom Properties</title>
+    <style>
+        :root{
+            --col: blue;
+        }
+        .box{
+            /* --col:red; */
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            margin: 2px 2px;
+            background-color: var(--col);
+        }
+        .container{
+            display: flex;
+            /* align-items: center; */
+            justify-content: center;
+            background-color: var(--col);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">Boxes 123</div>
+        <div class="box">Boxes 123</div>
+        <div class="box">Boxes 123</div>
+    </div>
+    
+</body>
+</html>

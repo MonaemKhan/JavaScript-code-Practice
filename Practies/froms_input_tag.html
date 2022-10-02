@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms & Input Tag</title>
+</head>
+
+<body>
+
+    <form action="mx.txt">
+
+        <div>
+            <label for="name">Name </label>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+
+        <div>
+            Roll: <input type="text" name="myRoll">
+        </div>
+        <br>
+
+        <div>
+            Email: <input type="email" name="myEmail">
+        </div>
+        <br>
+
+        <div>
+            Date: <input type="date" name="myDate">
+        </div>
+        <br>
+
+        <div>
+            <label for="eligible">Are You Eligible</label> 
+            <input type="checkbox" name="myEligible" id = "eligible" checked >
+        </div>
+        <br>
+
+        <div>
+            <label for="blood">Blood Group</label>
+            <select name="myBlood" id="blood">
+                <option value="A+">A+</option>
+                <option value="B+"selected>B+</option>
+                <option value="O+">O+</option>
+                <option value="AB+">AB+</option>
+                <option value="A-">A-</option>
+                <option value="B-">B-</option>
+                <option value="O-">O-</option>
+                <option value="AB-">AB-</option>
+            </select>
+        </div>
+        <br>
+
+        <div>
+            Gender:
+            <input type="radio" name="myGender">Male
+            <input type="radio" name="myGender">Female
+            <input type="radio" name="myGender">Other
+        </div>
+        <br>
+
+        <div>
+            Write About Yourself: <br>
+            <textarea name="myTest" id="" cols="30" rows="05"></textarea>
+        </div>
+        <br>
+
+        <div>
+            <input type="submit" value="Submit now">
+            <input type="reset" value="Reset">
+        </div>
+
+    </form>
+
+</body>
+
+</html>
